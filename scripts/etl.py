@@ -8,7 +8,7 @@ API_KEY = os.getenv("BRAWL_STARS_API_KEY")
 PLAYER_TAG = os.getenv("BRAWL_STARS_PLAYER_TAG", "#29000000")
 
 FORMATTED_TAG = PLAYER_TAG.replace("#", "%23")
-BASE_URL = "https://proxy.royaleapi.dev/v1"
+BASE_URL = "https://bsproxy.royaleapi.dev/v1"
 HEADERS = {
     "Authorization": f"Bearer {API_KEY}",
     "Accept": "application/json"
