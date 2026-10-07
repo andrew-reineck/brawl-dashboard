@@ -27,6 +27,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Inspect DB file
+        run: |
+          ls -la data/
+          head -c 100 data/brawl_stars.db | xxd | head -5
+
       - name: Execute Ingestion Script
         env:
           BRAWL_STARS_API_KEY: ${{ secrets.BRAWL_STARS_API_KEY }}
