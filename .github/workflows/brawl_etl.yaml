@@ -1,9 +1,9 @@
-name: Brawl Stars 80-Min ETL Sync
+name: Brawl Stars 60-Min ETL Sync
 
 on:
   schedule:
-    # Runs automatically every 80 minutes
-    - cron: '0 * * * *'
+    # Runs automatically every 60 minutes
+    - cron: '33 * * * *'
   workflow_dispatch: # Allows manual triggers from the GitHub UI
 
 permissions:
